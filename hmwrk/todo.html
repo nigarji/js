@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+   
+    <div class="todoCon">
+    <h1>My todo list</h1>
+    
+    <input type="text" name="" id="input-text" placeholder="Add new todo">
+    <br>
+    <button class="btn" id="add-btn"> Add new </button> 
+    <ul class="mylist" id="ulid">
+    </ul>
+    </div>
+
+    <script>
+        const addBtn=document.getElementById('add-btn');
+        const addInput=document.getElementById('input-text');
+        const addUl=document.getElementById('ulid');
+
+        addBtn.onclick=function(){
+            const inputValue=addInput.value;
+            const newLi=document.createElement('li');
+            newLi.innerText=inputValue;
+            ulid.appendChild(newLi);
+            addInput.value="";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+*{
+    margin: 5px;
+}
+h1{
+    font-size:25px;
+    font-family: Arial;
+}
+.btn{
+
+    background-color: rgb(56, 102, 243);
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    color:white;
+    cursor: pointer;
+}
+
+.todoCon input:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
